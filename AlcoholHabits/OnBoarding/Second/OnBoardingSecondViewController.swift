@@ -18,5 +18,7 @@ class OnBoardingSecondViewController: UIViewController {
     }
 
     @IBAction func clickedLetsGo(_ sender: UIButton) {
+        let tabBarVC = TabBarViewController(nibName: "TabBarViewController", bundle: nil)
+        self.navigationController?.viewControllers = [tabBarVC]
     }
 }

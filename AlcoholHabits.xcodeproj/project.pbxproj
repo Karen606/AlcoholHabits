@@ -30,9 +30,20 @@
 		6BB2FBB32CE7A267009ED37A /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2FBAC2CE7A267009ED37A /* BaseTextField.swift */; };
 		6BB2FBB42CE7A267009ED37A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2FBA82CE7A267009ED37A /* Date.swift */; };
 		6BB2FBB52CE7A267009ED37A /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2FBAA2CE7A267009ED37A /* BaseButton.swift */; };
+		6BB2FBBD2CE7A63D009ED37A /* EdgeShadowLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2FBBC2CE7A63D009ED37A /* EdgeShadowLayer.swift */; };
+		6BB2FBC12CE7A6CC009ED37A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2FBC02CE7A6CC009ED37A /* TabBarViewController.swift */; };
+		6BB2FBC82CE7A741009ED37A /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BB2FBC72CE7A741009ED37A /* CalendarViewController.xib */; };
+		6BB2FBC92CE7A741009ED37A /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2FBC62CE7A741009ED37A /* CalendarViewController.swift */; };
+		6BB2FBCD2CE7A754009ED37A /* StatisticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BB2FBCC2CE7A754009ED37A /* StatisticsViewController.xib */; };
+		6BB2FBCE2CE7A754009ED37A /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2FBCB2CE7A754009ED37A /* StatisticsViewController.swift */; };
+		6BB2FBD22CE7A764009ED37A /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BB2FBD12CE7A764009ED37A /* SettingsViewController.xib */; };
+		6BB2FBD32CE7A764009ED37A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2FBD02CE7A764009ED37A /* SettingsViewController.swift */; };
+		6BCBA0A62CE7B18D0079EB95 /* SectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA0A52CE7B18D0079EB95 /* SectionButton.swift */; };
+		AF61E441E685263284CD1BE3 /* Pods_AlcoholHabits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C8741D193C42766D97CEA6 /* Pods_AlcoholHabits.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A4DBD314BC5CD0D10C50432 /* Pods-AlcoholHabits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoholHabits.release.xcconfig"; path = "Target Support Files/Pods-AlcoholHabits/Pods-AlcoholHabits.release.xcconfig"; sourceTree = "<group>"; };
 		6B870A9A2CE78DC800256158 /* AlcoholHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlcoholHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B870AB62CE78DCF00256158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B870AB72CE78DCF00256158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +69,17 @@
 		6BB2FBAA2CE7A267009ED37A /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		6BB2FBAB2CE7A267009ED37A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		6BB2FBAC2CE7A267009ED37A /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
+		6BB2FBBC2CE7A63D009ED37A /* EdgeShadowLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeShadowLayer.swift; sourceTree = "<group>"; };
+		6BB2FBC02CE7A6CC009ED37A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		6BB2FBC62CE7A741009ED37A /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		6BB2FBC72CE7A741009ED37A /* CalendarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
+		6BB2FBCB2CE7A754009ED37A /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		6BB2FBCC2CE7A754009ED37A /* StatisticsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticsViewController.xib; sourceTree = "<group>"; };
+		6BB2FBD02CE7A764009ED37A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6BB2FBD12CE7A764009ED37A /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		6BCBA0A52CE7B18D0079EB95 /* SectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionButton.swift; sourceTree = "<group>"; };
+		D3C8741D193C42766D97CEA6 /* Pods_AlcoholHabits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlcoholHabits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49DA961D682168A2A07F3A1 /* Pods-AlcoholHabits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoholHabits.debug.xcconfig"; path = "Target Support Files/Pods-AlcoholHabits/Pods-AlcoholHabits.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,17 +87,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF61E441E685263284CD1BE3 /* Pods_AlcoholHabits.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28C4DD9B0D64E3C9DB8C33FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3C8741D193C42766D97CEA6 /* Pods_AlcoholHabits.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6B870A912CE78DC800256158 = {
 			isa = PBXGroup;
 			children = (
 				6B870ABF2CE78DCF00256158 /* AlcoholHabits */,
 				6B870A9B2CE78DC800256158 /* Products */,
+				DC938CF71180E8C3B506743E /* Pods */,
+				28C4DD9B0D64E3C9DB8C33FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,9 +123,13 @@
 		6B870ABF2CE78DCF00256158 /* AlcoholHabits */ = {
 			isa = PBXGroup;
 			children = (
+				6BB2FBC42CE7A71F009ED37A /* Settings */,
+				6BB2FBC32CE7A713009ED37A /* Statistics */,
+				6BB2FBC22CE7A707009ED37A /* Calendar */,
+				6BB2FBBB2CE7A5A7009ED37A /* TabBar */,
 				6B870ADA2CE7970400256158 /* OnBoarding */,
-				6B870ACE2CE7933600256158 /* Extensions */,
 				6B870AC92CE792AE00256158 /* Root */,
+				6B870ACE2CE7933600256158 /* Extensions */,
 				6B870AB52CE78DCF00256158 /* AlcoholHabits.xcdatamodeld */,
 				6B870AB62CE78DCF00256158 /* AppDelegate.swift */,
 				6B870AB72CE78DCF00256158 /* Assets.xcassets */,
@@ -115,6 +152,7 @@
 		6B870ACE2CE7933600256158 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6BB2FBBC2CE7A63D009ED37A /* EdgeShadowLayer.swift */,
 				6BB2FBA62CE7A267009ED37A /* UIView.swift */,
 				6BB2FBA72CE7A267009ED37A /* ViewController.swift */,
 				6BB2FBA82CE7A267009ED37A /* Date.swift */,
@@ -122,6 +160,7 @@
 				6BB2FBAA2CE7A267009ED37A /* BaseButton.swift */,
 				6BB2FBAB2CE7A267009ED37A /* String.swift */,
 				6BB2FBAC2CE7A267009ED37A /* BaseTextField.swift */,
+				6BCBA0A52CE7B18D0079EB95 /* SectionButton.swift */,
 				6B870ACF2CE7934500256158 /* Font */,
 			);
 			path = Extensions;
@@ -166,6 +205,74 @@
 			path = Second;
 			sourceTree = "<group>";
 		};
+		6BB2FBBB2CE7A5A7009ED37A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				6BB2FBC02CE7A6CC009ED37A /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		6BB2FBC22CE7A707009ED37A /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				6BB2FBC52CE7A727009ED37A /* View */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		6BB2FBC32CE7A713009ED37A /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				6BB2FBCA2CE7A745009ED37A /* View */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		6BB2FBC42CE7A71F009ED37A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6BB2FBCF2CE7A758009ED37A /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6BB2FBC52CE7A727009ED37A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BB2FBC62CE7A741009ED37A /* CalendarViewController.swift */,
+				6BB2FBC72CE7A741009ED37A /* CalendarViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BB2FBCA2CE7A745009ED37A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BB2FBCB2CE7A754009ED37A /* StatisticsViewController.swift */,
+				6BB2FBCC2CE7A754009ED37A /* StatisticsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BB2FBCF2CE7A758009ED37A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BB2FBD02CE7A764009ED37A /* SettingsViewController.swift */,
+				6BB2FBD12CE7A764009ED37A /* SettingsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC938CF71180E8C3B506743E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F49DA961D682168A2A07F3A1 /* Pods-AlcoholHabits.debug.xcconfig */,
+				5A4DBD314BC5CD0D10C50432 /* Pods-AlcoholHabits.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,17 +280,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B870AB02CE78DCA00256158 /* Build configuration list for PBXNativeTarget "AlcoholHabits" */;
 			buildPhases = (
+				08E39BA3084FD7F83C6299F1 /* [CP] Check Pods Manifest.lock */,
 				6B870A962CE78DC800256158 /* Sources */,
 				6B870A972CE78DC800256158 /* Frameworks */,
 				6B870A982CE78DC800256158 /* Resources */,
+				EF15694F2CA57E8F2D788913 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = AlcoholHabits;
-			packageProductDependencies = (
-			);
 			productName = AlcoholHabits;
 			productReference = 6B870A9A2CE78DC800256158 /* AlcoholHabits.app */;
 			productType = "com.apple.product-type.application";
@@ -230,9 +337,12 @@
 				6B870AD12CE7937C00256158 /* ZenKakuGothicNew-Regular.ttf in Resources */,
 				6B870AE52CE79CF600256158 /* OnBoardingSecondViewController.xib in Resources */,
 				6B870AC52CE78DCF00256158 /* Assets.xcassets in Resources */,
+				6BB2FBCD2CE7A754009ED37A /* StatisticsViewController.xib in Resources */,
 				6B870AC72CE78DCF00256158 /* LaunchScreen.storyboard in Resources */,
 				6B870AD52CE793AB00256158 /* SFProText-Medium.ttf in Resources */,
 				6B870AD72CE793B200256158 /* SFProText-Semibold.ttf in Resources */,
+				6BB2FBD22CE7A764009ED37A /* SettingsViewController.xib in Resources */,
+				6BB2FBC82CE7A741009ED37A /* CalendarViewController.xib in Resources */,
 				6B870AC82CE78DCF00256158 /* Root.storyboard in Resources */,
 				6B870AD32CE7938300256158 /* ZenKakuGothicNew-Medium.ttf in Resources */,
 				6B870ADF2CE7973200256158 /* OnBoardingViewController.xib in Resources */,
@@ -241,23 +351,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08E39BA3084FD7F83C6299F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlcoholHabits-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF15694F2CA57E8F2D788913 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlcoholHabits/Pods-AlcoholHabits-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlcoholHabits/Pods-AlcoholHabits-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlcoholHabits/Pods-AlcoholHabits-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6B870A962CE78DC800256158 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BB2FBC12CE7A6CC009ED37A /* TabBarViewController.swift in Sources */,
 				6B870AE42CE79CF600256158 /* OnBoardingSecondViewController.swift in Sources */,
+				6BB2FBC92CE7A741009ED37A /* CalendarViewController.swift in Sources */,
 				6B870AC12CE78DCF00256158 /* AlcoholHabits.xcdatamodeld in Sources */,
 				6B870AC22CE78DCF00256158 /* AppDelegate.swift in Sources */,
+				6BB2FBD32CE7A764009ED37A /* SettingsViewController.swift in Sources */,
 				6B870AD92CE793DC00256158 /* Font.swift in Sources */,
+				6BB2FBBD2CE7A63D009ED37A /* EdgeShadowLayer.swift in Sources */,
 				6B870ADE2CE7973200256158 /* OnBoardingViewController.swift in Sources */,
 				6B870ACD2CE792E900256158 /* RootViewController.swift in Sources */,
 				6B870AC32CE78DCF00256158 /* SceneDelegate.swift in Sources */,
+				6BCBA0A62CE7B18D0079EB95 /* SectionButton.swift in Sources */,
 				6BB2FBAF2CE7A267009ED37A /* String.swift in Sources */,
 				6BB2FBB02CE7A267009ED37A /* UIView.swift in Sources */,
 				6BB2FBB12CE7A267009ED37A /* ViewController.swift in Sources */,
 				6BB2FBB22CE7A267009ED37A /* ShadowView.swift in Sources */,
 				6BB2FBB32CE7A267009ED37A /* BaseTextField.swift in Sources */,
+				6BB2FBCE2CE7A754009ED37A /* StatisticsViewController.swift in Sources */,
 				6BB2FBB42CE7A267009ED37A /* Date.swift in Sources */,
 				6BB2FBB52CE7A267009ED37A /* BaseButton.swift in Sources */,
 			);
@@ -287,6 +445,7 @@
 /* Begin XCBuildConfiguration section */
 		6B870AB12CE78DCA00256158 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F49DA961D682168A2A07F3A1 /* Pods-AlcoholHabits.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +475,7 @@
 		};
 		6B870AB22CE78DCA00256158 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A4DBD314BC5CD0D10C50432 /* Pods-AlcoholHabits.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -380,7 +540,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -443,7 +603,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

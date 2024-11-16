@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalendarViewController" customModule="AlcoholHabits" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonBottomConst" destination="sBh-OK-ZGc" id="qBj-MR-ntA"/>
+                <outlet property="calendarBgView" destination="bvc-Mw-45o" id="Hih-ic-xkQ"/>
+                <outlet property="calendarView" destination="dxg-bA-8hi" id="6UQ-al-Kfj"/>
+                <outlet property="monthButton" destination="1Tj-Vh-FTt" id="qAJ-Yw-Ihd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yearButton" destination="FZw-IK-8et" id="8Hc-Sf-dBv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="ndb-F5-6cF">
+                    <rect key="frame" x="128" y="83" width="137" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Tj-Vh-FTt" customClass="SectionButton" customModule="AlcoholHabits" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="52" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="okr-IC-3Oj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Month">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="chooseMonth:" destination="-1" eventType="touchUpInside" id="9Xj-It-S9d"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZw-IK-8et" customClass="SectionButton" customModule="AlcoholHabits" customModuleProvider="target">
+                            <rect key="frame" x="85" y="0.0" width="52" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="b68-g8-fyl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Year">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="chooseYear:" destination="-1" eventType="touchUpInside" id="xLg-in-OBv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bvc-Mw-45o">
+                    <rect key="frame" x="8" y="143" width="377" height="547"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dxg-bA-8hi" customClass="CalendarView" customModule="YACalendar">
+                            <rect key="frame" x="8" y="8" width="361" height="531"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="dxg-bA-8hi" firstAttribute="leading" secondItem="bvc-Mw-45o" secondAttribute="leading" constant="8" id="ISe-P9-dYd"/>
+                        <constraint firstAttribute="bottom" secondItem="dxg-bA-8hi" secondAttribute="bottom" constant="8" id="MR4-MO-sbg"/>
+                        <constraint firstItem="dxg-bA-8hi" firstAttribute="top" secondItem="bvc-Mw-45o" secondAttribute="top" constant="8" id="OUo-zO-eEC"/>
+                        <constraint firstAttribute="trailing" secondItem="dxg-bA-8hi" secondAttribute="trailing" constant="8" id="pOp-6P-j5M"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prg-mW-0ua">
+                    <rect key="frame" x="42" y="740" width="309" height="54"/>
+                    <color key="backgroundColor" name="buttonColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="1HH-LP-47L"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Add a drink">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ndb-F5-6cF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="KA6-tG-Iai"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Prg-mW-0ua" secondAttribute="trailing" constant="42" id="M6r-qE-noT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bvc-Mw-45o" secondAttribute="trailing" constant="8" id="a6A-eb-LpQ"/>
+                <constraint firstItem="Prg-mW-0ua" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="42" id="agV-MB-cTs"/>
+                <constraint firstItem="Prg-mW-0ua" firstAttribute="top" secondItem="bvc-Mw-45o" secondAttribute="bottom" constant="50" id="cwU-st-nk6"/>
+                <constraint firstItem="bvc-Mw-45o" firstAttribute="top" secondItem="ndb-F5-6cF" secondAttribute="bottom" constant="20" id="dIZ-RE-qRc"/>
+                <constraint firstItem="bvc-Mw-45o" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="rwz-o6-idb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Prg-mW-0ua" secondAttribute="bottom" constant="24" id="sBh-OK-ZGc"/>
+                <constraint firstItem="ndb-F5-6cF" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="yiP-lj-xBv"/>
+            </constraints>
+            <point key="canvasLocation" x="75.572519083969468" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="buttonColor">
+            <color red="0.11800000071525574" green="0.11800000071525574" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

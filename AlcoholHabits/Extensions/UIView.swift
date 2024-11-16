@@ -28,9 +28,15 @@ extension UIView {
     
     func addBottomBorder(color: UIColor, thickness: CGFloat) {
         let bottomBorder = CALayer()
+        bottomBorder.name = "bottomBorder"
         bottomBorder.frame = CGRect(x: 0, y: self.frame.height - thickness, width: self.frame.width, height: thickness)
         bottomBorder.backgroundColor = color.cgColor
+        bottomBorder.cornerRadius = 1.5
         self.layer.addSublayer(bottomBorder)
+    }
+    
+    func removeBottomBorder() {
+        self.layer.sublayers?.removeAll(where: { $0.name == "bottomBorder" })
     }
     
     func toImage() -> UIImage? {
