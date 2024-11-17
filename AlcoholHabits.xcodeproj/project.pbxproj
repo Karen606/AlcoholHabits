@@ -39,6 +39,13 @@
 		6BB2FBD22CE7A764009ED37A /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BB2FBD12CE7A764009ED37A /* SettingsViewController.xib */; };
 		6BB2FBD32CE7A764009ED37A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2FBD02CE7A764009ED37A /* SettingsViewController.swift */; };
 		6BCBA0A62CE7B18D0079EB95 /* SectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA0A52CE7B18D0079EB95 /* SectionButton.swift */; };
+		6BCBA0AC2CE8AF540079EB95 /* DrinkFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BCBA0AB2CE8AF540079EB95 /* DrinkFormViewController.xib */; };
+		6BCBA0AD2CE8AF540079EB95 /* DrinkFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA0AA2CE8AF540079EB95 /* DrinkFormViewController.swift */; };
+		6BCBA0BE2CE962B90079EB95 /* PriceTextFielddDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA0BD2CE962B90079EB95 /* PriceTextFielddDelegate.swift */; };
+		6BCBA0C22CEA4CC90079EB95 /* DrinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA0C12CEA4CC90079EB95 /* DrinkModel.swift */; };
+		6BCBA0C52CEA4E280079EB95 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA0C42CEA4E280079EB95 /* CoreDataManager.swift */; };
+		6BCBA0C82CEA501C0079EB95 /* DrinkFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA0C72CEA501C0079EB95 /* DrinkFormViewModel.swift */; };
+		6BCBA0CB2CEA58D30079EB95 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA0CA2CEA58D30079EB95 /* CalendarViewModel.swift */; };
 		AF61E441E685263284CD1BE3 /* Pods_AlcoholHabits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C8741D193C42766D97CEA6 /* Pods_AlcoholHabits.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +85,13 @@
 		6BB2FBD02CE7A764009ED37A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6BB2FBD12CE7A764009ED37A /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		6BCBA0A52CE7B18D0079EB95 /* SectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionButton.swift; sourceTree = "<group>"; };
+		6BCBA0AA2CE8AF540079EB95 /* DrinkFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkFormViewController.swift; sourceTree = "<group>"; };
+		6BCBA0AB2CE8AF540079EB95 /* DrinkFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkFormViewController.xib; sourceTree = "<group>"; };
+		6BCBA0BD2CE962B90079EB95 /* PriceTextFielddDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTextFielddDelegate.swift; sourceTree = "<group>"; };
+		6BCBA0C12CEA4CC90079EB95 /* DrinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkModel.swift; sourceTree = "<group>"; };
+		6BCBA0C42CEA4E280079EB95 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		6BCBA0C72CEA501C0079EB95 /* DrinkFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkFormViewModel.swift; sourceTree = "<group>"; };
+		6BCBA0CA2CEA58D30079EB95 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		D3C8741D193C42766D97CEA6 /* Pods_AlcoholHabits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlcoholHabits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49DA961D682168A2A07F3A1 /* Pods-AlcoholHabits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoholHabits.debug.xcconfig"; path = "Target Support Files/Pods-AlcoholHabits/Pods-AlcoholHabits.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +137,8 @@
 		6B870ABF2CE78DCF00256158 /* AlcoholHabits */ = {
 			isa = PBXGroup;
 			children = (
+				6BCBA0C32CEA4E1E0079EB95 /* CoreData */,
+				6BCBA0A92CE8AF430079EB95 /* DrinkForm */,
 				6BB2FBC42CE7A71F009ED37A /* Settings */,
 				6BB2FBC32CE7A713009ED37A /* Statistics */,
 				6BB2FBC22CE7A707009ED37A /* Calendar */,
@@ -160,6 +176,7 @@
 				6BB2FBAA2CE7A267009ED37A /* BaseButton.swift */,
 				6BB2FBAB2CE7A267009ED37A /* String.swift */,
 				6BB2FBAC2CE7A267009ED37A /* BaseTextField.swift */,
+				6BCBA0BD2CE962B90079EB95 /* PriceTextFielddDelegate.swift */,
 				6BCBA0A52CE7B18D0079EB95 /* SectionButton.swift */,
 				6B870ACF2CE7934500256158 /* Font */,
 			);
@@ -216,6 +233,7 @@
 		6BB2FBC22CE7A707009ED37A /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				6BCBA0C92CEA58C40079EB95 /* ViewModel */,
 				6BB2FBC52CE7A727009ED37A /* View */,
 			);
 			path = Calendar;
@@ -262,6 +280,57 @@
 				6BB2FBD12CE7A764009ED37A /* SettingsViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6BCBA0A92CE8AF430079EB95 /* DrinkForm */ = {
+			isa = PBXGroup;
+			children = (
+				6BCBA0C62CEA500C0079EB95 /* ViewModel */,
+				6BCBA0C02CEA4CA80079EB95 /* Model */,
+				6BCBA0BF2CEA4CA10079EB95 /* View */,
+			);
+			path = DrinkForm;
+			sourceTree = "<group>";
+		};
+		6BCBA0BF2CEA4CA10079EB95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BCBA0AA2CE8AF540079EB95 /* DrinkFormViewController.swift */,
+				6BCBA0AB2CE8AF540079EB95 /* DrinkFormViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BCBA0C02CEA4CA80079EB95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BCBA0C12CEA4CC90079EB95 /* DrinkModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6BCBA0C32CEA4E1E0079EB95 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6BCBA0C42CEA4E280079EB95 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		6BCBA0C62CEA500C0079EB95 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BCBA0C72CEA501C0079EB95 /* DrinkFormViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6BCBA0C92CEA58C40079EB95 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BCBA0CA2CEA58D30079EB95 /* CalendarViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		DC938CF71180E8C3B506743E /* Pods */ = {
@@ -336,6 +405,7 @@
 			files = (
 				6B870AD12CE7937C00256158 /* ZenKakuGothicNew-Regular.ttf in Resources */,
 				6B870AE52CE79CF600256158 /* OnBoardingSecondViewController.xib in Resources */,
+				6BCBA0AC2CE8AF540079EB95 /* DrinkFormViewController.xib in Resources */,
 				6B870AC52CE78DCF00256158 /* Assets.xcassets in Resources */,
 				6BB2FBCD2CE7A754009ED37A /* StatisticsViewController.xib in Resources */,
 				6B870AC72CE78DCF00256158 /* LaunchScreen.storyboard in Resources */,
@@ -403,20 +473,26 @@
 				6BB2FBC92CE7A741009ED37A /* CalendarViewController.swift in Sources */,
 				6B870AC12CE78DCF00256158 /* AlcoholHabits.xcdatamodeld in Sources */,
 				6B870AC22CE78DCF00256158 /* AppDelegate.swift in Sources */,
+				6BCBA0C82CEA501C0079EB95 /* DrinkFormViewModel.swift in Sources */,
 				6BB2FBD32CE7A764009ED37A /* SettingsViewController.swift in Sources */,
+				6BCBA0C52CEA4E280079EB95 /* CoreDataManager.swift in Sources */,
 				6B870AD92CE793DC00256158 /* Font.swift in Sources */,
 				6BB2FBBD2CE7A63D009ED37A /* EdgeShadowLayer.swift in Sources */,
 				6B870ADE2CE7973200256158 /* OnBoardingViewController.swift in Sources */,
+				6BCBA0BE2CE962B90079EB95 /* PriceTextFielddDelegate.swift in Sources */,
 				6B870ACD2CE792E900256158 /* RootViewController.swift in Sources */,
 				6B870AC32CE78DCF00256158 /* SceneDelegate.swift in Sources */,
 				6BCBA0A62CE7B18D0079EB95 /* SectionButton.swift in Sources */,
 				6BB2FBAF2CE7A267009ED37A /* String.swift in Sources */,
+				6BCBA0CB2CEA58D30079EB95 /* CalendarViewModel.swift in Sources */,
 				6BB2FBB02CE7A267009ED37A /* UIView.swift in Sources */,
 				6BB2FBB12CE7A267009ED37A /* ViewController.swift in Sources */,
 				6BB2FBB22CE7A267009ED37A /* ShadowView.swift in Sources */,
 				6BB2FBB32CE7A267009ED37A /* BaseTextField.swift in Sources */,
 				6BB2FBCE2CE7A754009ED37A /* StatisticsViewController.swift in Sources */,
+				6BCBA0AD2CE8AF540079EB95 /* DrinkFormViewController.swift in Sources */,
 				6BB2FBB42CE7A267009ED37A /* Date.swift in Sources */,
+				6BCBA0C22CEA4CC90079EB95 /* DrinkModel.swift in Sources */,
 				6BB2FBB52CE7A267009ED37A /* BaseButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

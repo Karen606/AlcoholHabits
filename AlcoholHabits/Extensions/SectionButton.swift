@@ -16,7 +16,7 @@ class SectionButton: UIButton {
                 self.titleLabel?.font = .mediumZen(size: 22)
             } else {
                 self.removeBottomBorder()
-                self.titleLabel?.font = .regularZen(size: 22)
+                self.titleLabel?.font = .regularZen(size: 20)
             }
         }
     }

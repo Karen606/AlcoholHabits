@@ -120,9 +120,9 @@ public class CalendarView: UIView {
         days?.forEach {
             $0.select()
             
-            if grid.calendarType == .oneOnOne {
+//            if grid.calendarType == .oneOnOne {
                 $0.view?.configure(with: config.day, day: $0, calendarType: grid.calendarType)
-            }
+//            }
         }
     }
     
@@ -240,13 +240,13 @@ public class CalendarView: UIView {
     
     @objc
     private func tapped(_ sender: UITapGestureRecognizer) {
-        guard let data = data else { return }
+        guard let data = data, grid.calendarType != .threeOnFour else { return }
         
         let tappedPoint = sender.location(in: scrollView)
         
         guard let tappedMonth = data.months.first(where: { $0.rect.contains(tappedPoint) }) else { return }
         
-        if grid.calendarType == .oneOnOne {
+//        if grid.calendarType == .oneOnOne {
             let tappedPointInMonth = sender.location(in: tappedMonth.view)
             let tappedWeek = tappedMonth.weeks.first(where: { $0.rect.contains(tappedPointInMonth) })
             let tappedPointInWeek = sender.location(in: tappedWeek?.view)
@@ -330,9 +330,9 @@ public class CalendarView: UIView {
                 day.view?.configure(with: config.day, day: day, calendarType: grid.calendarType)
                 calendarDelegate?.didSelectDate?(day.date)
             }
-        } else {
-            calendarDelegate?.didSelectDate?(tappedMonth.startMonthDate)
-        }
+//        } else {
+//            calendarDelegate?.didSelectDate?(tappedMonth.startMonthDate)
+//        }
     }
     
     private func calculateMonths() {

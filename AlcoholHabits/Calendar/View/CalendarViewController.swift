@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 import YACalendar
 
 class CalendarViewController: UIViewController {
@@ -15,24 +16,44 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var calendarBgView: UIView!
     @IBOutlet weak var buttonBottomConst: NSLayoutConstraint!
     var heightConstraint: NSLayoutConstraint?
+    private let viewModel = CalendarViewModel.shared
+    private var cancellables: Set<AnyCancellable> = []
+
     
     override func viewDidLoad() {
-         super.viewDidLoad()
-         setHeightConstraint(to: 360)
-         monthButton.isSelected = true
-         calendarView.grid.scrollDirection = .horizonal
-         calendarView.grid.calendarType = .oneOnOne
-         calendarView.data = CalendarData()
-         calendarBgView.layer.cornerRadius = 16
-         calendarBgView.addShadow()
-         calendarView.calendarDelegate = self
-         let date = UserDefaults.standard.value(forKey: "date") as? Date
-//         calendarView.selectDay(with: date ?? Date())
-//         calendarView.setEvents([.init(title: "", startDate: date!, endDate: Date())])
-        calendarView.selectDay(with: date!)
-//         calendarView.config.day.borderWidth(for: .out, indicator: .selected)
-//         calendarView.config.day.borderColor(for: .out, indicator: .selected)
-        
+        super.viewDidLoad()
+        setHeightConstraint(to: 360)
+        monthButton.titleLabel?.font = .regularZen(size: 20)
+        yearButton.titleLabel?.font = .regularZen(size: 20)
+        monthButton.isSelected = true
+        calendarView.grid.scrollDirection = .horizonal
+        calendarView.grid.calendarType = .oneOnOne
+        calendarView.data = CalendarData()
+        calendarBgView.layer.cornerRadius = 16
+        calendarBgView.addShadow()
+        calendarView.calendarDelegate = self
+        subscribe()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+        viewModel.fetchData()
+    }
+    
+    func subscribe() {
+        viewModel.$drinks
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] drinks in
+                guard let self = self else { return }
+                if self.calendarView.grid.calendarType == .oneOnOne {
+                    let events = drinks.map({ CalendarEvent(title: "", startDate: $0.date ?? Date(), endDate: $0.date ?? Date() )})
+                    self.calendarView.setEvents(events)
+                } else {
+                    let dates = drinks.map({ $0.date ?? Date() })
+                    self.calendarView.selectDays(with: dates)
+                }
+            }
+            .store(in: &cancellables)
     }
     
     func setHeightConstraint(to height: CGFloat) {
@@ -58,9 +79,8 @@ class CalendarViewController: UIViewController {
         calendarView.grid.calendarType = .oneOnOne
         calendarView.grid.scrollDirection = .horizonal
         calendarView.data = CalendarData()
-        let date = UserDefaults.standard.value(forKey: "date") as? Date
-        calendarView.setEvents([.init(title: "", startDate: date!, endDate: Date())])
-
+        let events = viewModel.drinks.map({ CalendarEvent(title: "", startDate: $0.date ?? Date(), endDate: $0.date ?? Date() )})
+        calendarView.setEvents(events)
     }
     
     func selectYear() {
@@ -76,10 +96,11 @@ class CalendarViewController: UIViewController {
         let lastDayOfYear = calendar.date(bySetting: .month, value: 12, of: currentDate)
         let lastDate = calendar.date(bySetting: .day, value: calendar.range(of: .day, in: .month, for: lastDayOfYear!)?.count ?? 31, of: lastDayOfYear!)
         calendarView.data = CalendarData(calendar: calendar, startDate: firstDayOfYear, endDate: lastDate)
-        let date = UserDefaults.standard.value(forKey: "date") as? Date
-//        calendarView.setEvents([.init(title: "", startDate: date!, endDate: Date())])
-        calendarView.selectDay(with: date!)
         calendarView.scrollView.contentOffset = .zero
+        let dates = viewModel.drinks.map({ $0.date ?? Date() })
+        self.calendarView.selectDays(with: dates)
+        calendarView
+
     }
      
     @IBAction func chooseMonth(_ sender: SectionButton) {
@@ -91,12 +112,15 @@ class CalendarViewController: UIViewController {
         if sender.isSelected { return }
         selectYear()
     }
+    
+    @IBAction func clickedAdd(_ sender: UIButton) {
+        self.pushViewController(DrinkFormViewController.self)
+    }
 }
 
 extension CalendarViewController: CalendarViewDelegate {
     func didSelectDate(_ date: Date) {
-        print(date)
-        UserDefaults.standard.set(date, forKey: "date")
+        DrinkFormViewModel.shared.drinkModel.date = date
     }
     
     func didUpdateDisplayedDate(_ date: Date) {

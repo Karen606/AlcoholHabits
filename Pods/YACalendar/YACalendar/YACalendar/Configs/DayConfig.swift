@@ -51,8 +51,7 @@ open class DayConfig {
     }
     
     public func eventIndicatorColor(inFuture: Bool) -> UIColor {
-        return inFuture ? UIColor(displayP3Red: 247 / 255, green: 101 / 255, blue: 48 / 255, alpha: 1.0) :
-            UIColor(displayP3Red: 188 / 255, green: 188 / 255, blue: 188 / 255, alpha: 1)
+        return #colorLiteral(red: 0.2274509966, green: 0.5960784554, blue: 1, alpha: 1)
     }
     
     public func fontSize(for calendarType: CalendarType) -> CGFloat {
