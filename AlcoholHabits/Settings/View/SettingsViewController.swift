@@ -9,21 +9,18 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet var settingsButtons: [UIButton]!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        settingsButtons.forEach({ $0.titleLabel?.font = .semiBold(size: 18) })
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func clickedContactUs(_ sender: UIButton) {
     }
-    */
+    @IBAction func clickedPrivacyPolicy(_ sender: UIButton) {
+    }
+    @IBAction func clickedRateUs(_ sender: UIButton) {
+    }
 
 }

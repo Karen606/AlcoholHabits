@@ -45,7 +45,6 @@ PODS:
     - "GoogleUtilities/NSData+zlib (~> 8.0)"
   - FirebaseRemoteConfigInterop (11.1.0)
   - FirebaseSharedSwift (11.1.0)
-  - FSCalendar (2.8.4)
   - GoogleAppMeasurement (11.1.0):
     - GoogleAppMeasurement/AdIdSupport (= 11.1.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 8.0)
@@ -99,14 +98,11 @@ PODS:
   - nanopb/decode (3.30910.0)
   - nanopb/encode (3.30910.0)
   - PromisesObjC (2.4.0)
-  - RSDayFlow (1.8.0)
   - YACalendar (0.0.3)
 
 DEPENDENCIES:
   - Firebase/RemoteConfig
   - FirebaseAnalytics
-  - FSCalendar
-  - RSDayFlow
   - YACalendar
 
 SPEC REPOS:
@@ -120,12 +116,10 @@ SPEC REPOS:
     - FirebaseRemoteConfig
     - FirebaseRemoteConfigInterop
     - FirebaseSharedSwift
-    - FSCalendar
     - GoogleAppMeasurement
     - GoogleUtilities
     - nanopb
     - PromisesObjC
-    - RSDayFlow
     - YACalendar
 
 SPEC CHECKSUMS:
@@ -138,14 +132,12 @@ SPEC CHECKSUMS:
   FirebaseRemoteConfig: 05521e937b72e01847a7128da5a492327364c705
   FirebaseRemoteConfigInterop: abf8b1bbc0bf1b84abd22b66746926410bf91a87
   FirebaseSharedSwift: 260a35e08943ec810d820a70bc0359136351d0c5
-  FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
   GoogleAppMeasurement: 8bb20efc67c8fc1cff9c42a06c256caf55289bbf
   GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
   nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
-  RSDayFlow: 3f320945d56fb08231b8204309a564aecca9787f
   YACalendar: 4e6fefda3c384c71d71db094bc7335013e3f4561
 
-PODFILE CHECKSUM: 9ca88244a3f2f7e43025e37171c2a9a2dba11f23
+PODFILE CHECKSUM: 10312394a274ecddce970aa09bc3903ef267b0eb
 
 COCOAPODS: 1.16.2

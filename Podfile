@@ -8,10 +8,7 @@ target 'AlcoholHabits' do
   # Pods for AlcoholHabits
   pod 'FirebaseAnalytics'
   pod 'Firebase/RemoteConfig'
-  pod 'FSCalendar'
   pod 'YACalendar'
-pod 'RSDayFlow'
-
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|
