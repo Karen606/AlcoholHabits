@@ -23,11 +23,11 @@ class SectionButton: UIButton {
     
     override init(frame: CGRect) {
          super.init(frame: frame)
-        self.titleLabel?.font = .regularZen(size: 22)
+        self.titleLabel?.font = .regularZen(size: 20)
      }
      
      required init?(coder: NSCoder) {
          super.init(coder: coder)
-         self.titleLabel?.font = .regularZen(size: 22)
+         self.titleLabel?.font = .regularZen(size: 20)
      }
 }

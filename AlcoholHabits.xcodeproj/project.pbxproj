@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B1B18F72CEBB6E400E7328A /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B18F62CEBB6E400E7328A /* Double.swift */; };
 		6B870AC12CE78DCF00256158 /* AlcoholHabits.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B870AB52CE78DCF00256158 /* AlcoholHabits.xcdatamodeld */; };
 		6B870AC22CE78DCF00256158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B870AB62CE78DCF00256158 /* AppDelegate.swift */; };
 		6B870AC32CE78DCF00256158 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B870ABD2CE78DCF00256158 /* SceneDelegate.swift */; };
@@ -46,11 +47,14 @@
 		6BCBA0C52CEA4E280079EB95 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA0C42CEA4E280079EB95 /* CoreDataManager.swift */; };
 		6BCBA0C82CEA501C0079EB95 /* DrinkFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA0C72CEA501C0079EB95 /* DrinkFormViewModel.swift */; };
 		6BCBA0CB2CEA58D30079EB95 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA0CA2CEA58D30079EB95 /* CalendarViewModel.swift */; };
+		6BCBA0CD2CEA91350079EB95 /* SFProText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BCBA0CC2CEA91350079EB95 /* SFProText-Light.ttf */; };
+		6BCBA0D02CEA96050079EB95 /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA0CF2CEA96050079EB95 /* StatisticsViewModel.swift */; };
 		AF61E441E685263284CD1BE3 /* Pods_AlcoholHabits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C8741D193C42766D97CEA6 /* Pods_AlcoholHabits.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A4DBD314BC5CD0D10C50432 /* Pods-AlcoholHabits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoholHabits.release.xcconfig"; path = "Target Support Files/Pods-AlcoholHabits/Pods-AlcoholHabits.release.xcconfig"; sourceTree = "<group>"; };
+		6B1B18F62CEBB6E400E7328A /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		6B870A9A2CE78DC800256158 /* AlcoholHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlcoholHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B870AB62CE78DCF00256158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B870AB72CE78DCF00256158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 		6BCBA0C42CEA4E280079EB95 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		6BCBA0C72CEA501C0079EB95 /* DrinkFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkFormViewModel.swift; sourceTree = "<group>"; };
 		6BCBA0CA2CEA58D30079EB95 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		6BCBA0CC2CEA91350079EB95 /* SFProText-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Light.ttf"; sourceTree = "<group>"; };
+		6BCBA0CF2CEA96050079EB95 /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
 		D3C8741D193C42766D97CEA6 /* Pods_AlcoholHabits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlcoholHabits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49DA961D682168A2A07F3A1 /* Pods-AlcoholHabits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoholHabits.debug.xcconfig"; path = "Target Support Files/Pods-AlcoholHabits/Pods-AlcoholHabits.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,6 +177,7 @@
 				6BB2FBBC2CE7A63D009ED37A /* EdgeShadowLayer.swift */,
 				6BB2FBA62CE7A267009ED37A /* UIView.swift */,
 				6BB2FBA72CE7A267009ED37A /* ViewController.swift */,
+				6B1B18F62CEBB6E400E7328A /* Double.swift */,
 				6BB2FBA82CE7A267009ED37A /* Date.swift */,
 				6BB2FBA92CE7A267009ED37A /* ShadowView.swift */,
 				6BB2FBAA2CE7A267009ED37A /* BaseButton.swift */,
@@ -186,6 +193,7 @@
 		6B870ACF2CE7934500256158 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				6BCBA0CC2CEA91350079EB95 /* SFProText-Light.ttf */,
 				6B870AD62CE793B200256158 /* SFProText-Semibold.ttf */,
 				6B870AD42CE793AB00256158 /* SFProText-Medium.ttf */,
 				6B870AD22CE7938300256158 /* ZenKakuGothicNew-Medium.ttf */,
@@ -242,6 +250,7 @@
 		6BB2FBC32CE7A713009ED37A /* Statistics */ = {
 			isa = PBXGroup;
 			children = (
+				6BCBA0CE2CEA95F70079EB95 /* ViewModel */,
 				6BB2FBCA2CE7A745009ED37A /* View */,
 			);
 			path = Statistics;
@@ -333,6 +342,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		6BCBA0CE2CEA95F70079EB95 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BCBA0CF2CEA96050079EB95 /* StatisticsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		DC938CF71180E8C3B506743E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,6 +431,7 @@
 				6BB2FBD22CE7A764009ED37A /* SettingsViewController.xib in Resources */,
 				6BB2FBC82CE7A741009ED37A /* CalendarViewController.xib in Resources */,
 				6B870AC82CE78DCF00256158 /* Root.storyboard in Resources */,
+				6BCBA0CD2CEA91350079EB95 /* SFProText-Light.ttf in Resources */,
 				6B870AD32CE7938300256158 /* ZenKakuGothicNew-Medium.ttf in Resources */,
 				6B870ADF2CE7973200256158 /* OnBoardingViewController.xib in Resources */,
 			);
@@ -474,6 +492,7 @@
 				6B870AC12CE78DCF00256158 /* AlcoholHabits.xcdatamodeld in Sources */,
 				6B870AC22CE78DCF00256158 /* AppDelegate.swift in Sources */,
 				6BCBA0C82CEA501C0079EB95 /* DrinkFormViewModel.swift in Sources */,
+				6B1B18F72CEBB6E400E7328A /* Double.swift in Sources */,
 				6BB2FBD32CE7A764009ED37A /* SettingsViewController.swift in Sources */,
 				6BCBA0C52CEA4E280079EB95 /* CoreDataManager.swift in Sources */,
 				6B870AD92CE793DC00256158 /* Font.swift in Sources */,
@@ -494,6 +513,7 @@
 				6BB2FBB42CE7A267009ED37A /* Date.swift in Sources */,
 				6BCBA0C22CEA4CC90079EB95 /* DrinkModel.swift in Sources */,
 				6BB2FBB52CE7A267009ED37A /* BaseButton.swift in Sources */,
+				6BCBA0D02CEA96050079EB95 /* StatisticsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

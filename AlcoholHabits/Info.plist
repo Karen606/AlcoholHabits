@@ -8,6 +8,7 @@
 		<string>SFProText-Medium.ttf</string>
 		<string>ZenKakuGothicNew-Medium.ttf</string>
 		<string>ZenKakuGothicNew-Regular.ttf</string>
+		<string>SFProText-Light.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

@@ -24,4 +24,8 @@ extension UIFont {
     static func regularZen(size: CFloat) -> UIFont? {
         return UIFont(name: "ZenKakuGothicNew-Regular", size: CGFloat(size))
     }
+    
+    static func light(size: CFloat) -> UIFont? {
+        return UIFont(name: "SFProText-Light", size: CGFloat(size))
+    }
 }

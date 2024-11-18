@@ -9,6 +9,7 @@ import Foundation
 
 class CalendarViewModel {
     static let shared = CalendarViewModel()
+    var dates: [Date] = []
     @Published var drinks: [DrinkModel] = []
     private init() {}
     
@@ -16,6 +17,7 @@ class CalendarViewModel {
         CoreDataManager.shared.fetchDrinks { [weak self] drinks, _ in
             guard let self = self else { return }
             self.drinks = drinks
+            self.dates = drinks.map({ $0.date ?? Date() } )
         }
     }
 }

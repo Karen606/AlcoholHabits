@@ -27,12 +27,14 @@ class CalendarViewController: UIViewController {
         yearButton.titleLabel?.font = .regularZen(size: 20)
         monthButton.isSelected = true
         calendarView.grid.scrollDirection = .horizonal
+        calendarView.scrollView.isScrollEnabled = false
         calendarView.grid.calendarType = .oneOnOne
         calendarView.data = CalendarData()
         calendarBgView.layer.cornerRadius = 16
         calendarBgView.addShadow()
         calendarView.calendarDelegate = self
         subscribe()
+//        viewModel.fetchData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -46,11 +48,20 @@ class CalendarViewController: UIViewController {
             .sink { [weak self] drinks in
                 guard let self = self else { return }
                 if self.calendarView.grid.calendarType == .oneOnOne {
-                    let events = drinks.map({ CalendarEvent(title: "", startDate: $0.date ?? Date(), endDate: $0.date ?? Date() )})
-                    self.calendarView.setEvents(events)
+//                    self.calendarView.data = CalendarData()
+//                    let events = drinks.map({ CalendarEvent(title: "", startDate: $0.date ?? Date(), endDate: $0.date ?? Date() )})
+//                    self.calendarView.setEvents(events)
+                    self.selectMonth()
                 } else {
-                    let dates = drinks.map({ $0.date ?? Date() })
-                    self.calendarView.selectDays(with: dates)
+                    self.selectYear()
+//                    let currentDate = Date()
+//                    let calendar = Calendar.current
+//                    let firstDayOfYear = calendar.date(from: calendar.dateComponents([.year], from: currentDate))
+//                    let lastDayOfYear = calendar.date(bySetting: .month, value: 12, of: currentDate)
+//                    let lastDate = calendar.date(bySetting: .day, value: calendar.range(of: .day, in: .month, for: lastDayOfYear!)?.count ?? 31, of: lastDayOfYear!)
+//                    self.calendarView.data = CalendarData(calendar: calendar, startDate: firstDayOfYear, endDate: lastDate)
+//                    let dates = drinks.map({ $0.date ?? Date() })
+//                    self.calendarView.selectDays(with: dates)
                 }
             }
             .store(in: &cancellables)
@@ -72,15 +83,24 @@ class CalendarViewController: UIViewController {
     }
     
     func selectMonth() {
+        calendarView.grid.calendarType = .oneOnOne
+        calendarView.grid.scrollDirection = .horizonal
+        calendarView.data = CalendarData()
         monthButton.isSelected = true
         yearButton.isSelected = false
         setHeightConstraint(to: 360)
         calendarBgView.layoutIfNeeded()
-        calendarView.grid.calendarType = .oneOnOne
-        calendarView.grid.scrollDirection = .horizonal
-        calendarView.data = CalendarData()
-        let events = viewModel.drinks.map({ CalendarEvent(title: "", startDate: $0.date ?? Date(), endDate: $0.date ?? Date() )})
+//        let currentDate = Date()
+//        let calendar = Calendar.current
+//        let firstDayOfYear = calendar.date(from: calendar.dateComponents([.year], from: currentDate))
+//        let lastDayOfYear = calendar.date(bySetting: .month, value: 12, of: currentDate)
+//        let lastDate = calendar.date(bySetting: .day, value: calendar.range(of: .day, in: .month, for: lastDayOfYear!)?.count ?? 31, of: lastDayOfYear!)
+//        calendarView.data = CalendarData(calendar: calendar, startDate: firstDayOfYear, endDate: lastDate)
+        
+//        let events = viewModel.drinks.map({ CalendarEvent(title: "", startDate: $0.date ?? Date(), endDate: $0.date ?? Date() )})
+        let events = viewModel.dates.map({ CalendarEvent(title: "", startDate: $0, endDate: $0)})
         calendarView.setEvents(events)
+        calendarView.scrollView.isScrollEnabled = false
     }
     
     func selectYear() {
@@ -97,10 +117,8 @@ class CalendarViewController: UIViewController {
         let lastDate = calendar.date(bySetting: .day, value: calendar.range(of: .day, in: .month, for: lastDayOfYear!)?.count ?? 31, of: lastDayOfYear!)
         calendarView.data = CalendarData(calendar: calendar, startDate: firstDayOfYear, endDate: lastDate)
         calendarView.scrollView.contentOffset = .zero
-        let dates = viewModel.drinks.map({ $0.date ?? Date() })
-        self.calendarView.selectDays(with: dates)
-        calendarView
-
+        self.calendarView.selectDays(with: viewModel.dates)
+        calendarView.scrollView.isScrollEnabled = true
     }
      
     @IBAction func chooseMonth(_ sender: SectionButton) {
@@ -114,7 +132,9 @@ class CalendarViewController: UIViewController {
     }
     
     @IBAction func clickedAdd(_ sender: UIButton) {
+        self.hidesBottomBarWhenPushed = true
         self.pushViewController(DrinkFormViewController.self)
+        self.hidesBottomBarWhenPushed = false
     }
 }
 
@@ -124,7 +144,6 @@ extension CalendarViewController: CalendarViewDelegate {
     }
     
     func didUpdateDisplayedDate(_ date: Date) {
-        print(date)
     }
 }
 
